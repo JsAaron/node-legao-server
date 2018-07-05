@@ -1,0 +1,13 @@
+找回 Node.js 里面那些遗失的 ES6 特性
+http://taobaofed.org/blog/2016/01/07/find-back-the-lost-es6-features-in-nodejs/
+
+颜色
+chalk
+
+推荐一下小巧，实用的node模块
+https://cnodejs.org/topic/580d52aceae2a24f34e67e23
+
+
+不同环境下配置文件使用
+config-lite
+https://www.colabug.com/290452.html
