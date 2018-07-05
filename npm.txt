@@ -11,3 +11,6 @@ https://cnodejs.org/topic/580d52aceae2a24f34e67e23
 不同环境下配置文件使用
 config-lite
 https://www.colabug.com/290452.html
+
+
+http://www.nodeclass.com/api/mongoose.html#guide

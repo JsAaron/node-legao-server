@@ -1,0 +1,23 @@
+import Cities from '../../models/home/cities'
+
+/**
+ * 城市控制器
+ */
+import AddressComponent from '../addressComponent'
+
+class CityController extends AddressComponent {
+    constructor() {
+        super()
+    }
+    async getCity(req, res, next) {
+        const type = req.query.type;
+        let cityInfo
+        //热门城市
+        if (type === 'hot') {
+            cityInfo = await Cities.cityHot();
+        }
+    }
+}
+
+
+export default CityController

@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 
 const config = globalConfig(__dirname)
 
+mongoose.set('debug', true)
 mongoose.connect(config.dbUrl);
 
 const db = mongoose.connection;
@@ -27,5 +28,6 @@ db.on('close', function() {
     );
     mongoose.connect(config.dbUrl, { server: { auto_reconnect: true } });
 });
+
 
 export default db;
