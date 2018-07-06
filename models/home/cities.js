@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-
+import cityData from '../../data/cities'
 
 const citySchema = new mongoose.Schema({
     data: {}
@@ -25,4 +25,16 @@ citySchema.statics.cityHot = function() {
 }
 
 
-const Cities = mongoose.model('Cities', citySchema);
+const citieModel = mongoose.model('Cities', citySchema);
+
+
+// 查找是否有数据
+// 如果不存在就导入
+citieModel.findOne((err, data) => {
+    if (!data) {
+        citieModel.create({ data: cityData });
+    }
+});
+
+
+export default citieModel

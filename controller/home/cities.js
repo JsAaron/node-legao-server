@@ -16,6 +16,7 @@ class CityController extends AddressComponent {
         if (type === 'hot') {
             cityInfo = await Cities.cityHot();
         }
+        res.send(cityInfo);
     }
 }
 

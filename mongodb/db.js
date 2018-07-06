@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 
 const config = globalConfig(__dirname)
 
-mongoose.set('debug', true)
+// mongoose.set('debug', true)
 mongoose.connect(config.dbUrl);
 
 const db = mongoose.connection;

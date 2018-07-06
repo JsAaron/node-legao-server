@@ -6,8 +6,6 @@ const router = express.Router();
 import CityController from '../controller/home/cities'
 
 
-
-
 const cityController = new CityController()
 
 
