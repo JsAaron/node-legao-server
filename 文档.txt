@@ -18,3 +18,6 @@ http://www.nodeclass.com/api/mongoose.html#guide
 
 mongoose的一些操作命令
 https://xianyulaodi.github.io/2017/05/06/mongoose的一些操作命令/
+
+
+http://wiki.jikexueyuan.com/project/node-lessons/cookie-session.html
