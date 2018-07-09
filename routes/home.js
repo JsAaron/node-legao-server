@@ -2,16 +2,13 @@ import express from 'express'
 
 const router = express.Router();
 
+import fType from '../controller/home/c-foodType'
+import sList from '../controller/home/c-shopList'
 
-import CityController from '../controller/home/cities'
+//主页获取分类
+router.use('/foodType', fType.getType);
 
-
-const cityController = new CityController()
-
-
-//相应home下的二级路由
-router.get('/cities', cityController.getCity);
-
-
+// 商铺列表
+router.use('/shopList', sList.getList);
 
 export default router
