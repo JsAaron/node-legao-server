@@ -2,13 +2,13 @@ import express from 'express'
 
 const router = express.Router();
 
-import fType from '../controller/home/c-foodType'
-import sList from '../controller/home/c-shopList'
+import fType from '../controller/c-foodType'
+import shop from '../controller/c-shop'
 
-//主页获取分类
+//获取主页获取分类
 router.use('/foodType', fType.getType);
 
-// 商铺列表
-router.use('/shopList', sList.getList);
+//获取主页商铺列表
+router.get('/shopList', shop.getList);
 
 export default router

@@ -1,7 +1,7 @@
 'use strict';
 
 import mongoose from 'mongoose'
-import typeData from '../../data/foodType'
+import typeData from '../data/foodType'
 
 const Schema = mongoose.Schema;
 

@@ -1,4 +1,4 @@
-import Cities from '../../models/home/cities'
+import Cities from '../models/cities'
 
 /**
  * 城市控制器

@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import cityData from '../../data/cities'
+import cityData from '../data/cities'
 
 const citySchema = new mongoose.Schema({
     data: {}

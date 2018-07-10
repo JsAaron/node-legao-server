@@ -1,6 +1,6 @@
 'use strict';
 
-import FoodModel from '../../models/home/m-foodType'
+import FoodModel from '../models/m-foodType'
 
 class FoodType {
     constructor() {}
